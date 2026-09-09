@@ -12,8 +12,8 @@ const PRODUCTS = [
     name: 'VENOCO 4.PNG',
     title: 'SINTÉTICO / HEAVY DUTY',
     desc: 'Máxima protección contra el desgaste térmico y fricción extrema en motores de alto rendimiento.',
-    src: 'http://venoco.com/wp-content/uploads/2026/09/4.png',
-    link: 'http://venoco.com/wp-content/uploads/2026/09/4.png',
+    src: 'https://venoco.com/wp-content/uploads/2026/09/4.png',
+    link: 'https://venoco.com/wp-content/uploads/2026/09/4.png',
     bg: '#0033a0',
     panel: '#002470',
   },
@@ -22,8 +22,8 @@ const PRODUCTS = [
     name: 'VENOCO 3.PNG',
     title: 'TECNOLOGÍA MULTIGRADO',
     desc: 'Formulación avanzada con aditivos detergentes que garantizan la máxima limpieza del motor.',
-    src: 'http://venoco.com/wp-content/uploads/2026/09/3.png',
-    link: 'http://venoco.com/wp-content/uploads/2026/09/3.png',
+    src: 'https://venoco.com/wp-content/uploads/2026/09/3.png',
+    link: 'https://venoco.com/wp-content/uploads/2026/09/3.png',
     bg: '#ffed00',
     panel: '#e6d500',
   },
@@ -32,8 +32,8 @@ const PRODUCTS = [
     name: 'VENOCO 2.PNG',
     title: 'PROTECCIÓN INDUSTRIAL',
     desc: 'Lubricante especializado para maquinaria pesada y condiciones de alta exigencia operacional.',
-    src: 'http://venoco.com/wp-content/uploads/2026/09/2.png',
-    link: 'http://venoco.com/wp-content/uploads/2026/09/2.png',
+    src: 'https://venoco.com/wp-content/uploads/2026/09/2.png',
+    link: 'https://venoco.com/wp-content/uploads/2026/09/2.png',
     bg: '#002470',
     panel: '#001b54',
   },
@@ -42,8 +42,8 @@ const PRODUCTS = [
     name: 'VENOCO 1.PNG',
     title: 'LUBRICACIÓN DE PRECISIÓN',
     desc: 'Desarrollado con estándares B2B e industriales para extender la vida útil de cada componente.',
-    src: 'http://venoco.com/wp-content/uploads/2026/09/1.png',
-    link: 'http://venoco.com/wp-content/uploads/2026/09/1.png',
+    src: 'https://venoco.com/wp-content/uploads/2026/09/1.png',
+    link: 'https://venoco.com/wp-content/uploads/2026/09/1.png',
     bg: '#111111',
     panel: '#333333',
   },
@@ -179,6 +179,25 @@ export default function ToonhubVenocoHero() {
   const [activeIndex, setActiveIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+
+  // Inyectar Google Fonts en el <head> del documento (necesario en Elementor donde no se sirve index.html)
+  useEffect(() => {
+    const id = 'toonhub-venoco-fonts'
+    if (document.getElementById(id)) return
+    const preconnect1 = document.createElement('link')
+    preconnect1.rel = 'preconnect'
+    preconnect1.href = 'https://fonts.googleapis.com'
+    const preconnect2 = document.createElement('link')
+    preconnect2.rel = 'preconnect'
+    preconnect2.href = 'https://fonts.gstatic.com'
+    preconnect2.crossOrigin = 'anonymous'
+    const link = document.createElement('link')
+    link.id = id
+    link.rel = 'stylesheet'
+    link.href =
+      'https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap'
+    document.head.append(preconnect1, preconnect2, link)
+  }, [])
 
   // Detectar responsive
   useEffect(() => {

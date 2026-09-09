@@ -5,11 +5,12 @@ export default defineConfig({
   plugins: [react()],
   base: './',
   build: {
+    sourcemap: false,
     rollupOptions: {
       output: {
-        // Nombres fijos sin hash para poder enlazar desde WordPress sin cambiar URLs
+        // IIFE: bundle autoejecutado, sin módulos dinámicos ni eval — compatible con CSP estricto de WordPress
+        format: 'iife',
         entryFileNames: 'assets/toonhub-venoco.js',
-        chunkFileNames: 'assets/toonhub-venoco-[name].js',
         assetFileNames: (info) => {
           if (info.name?.endsWith('.css')) return 'assets/toonhub-venoco.css'
           return 'assets/[name][extname]'
