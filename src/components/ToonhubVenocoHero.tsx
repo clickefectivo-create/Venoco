@@ -5,59 +5,92 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 const FONT_PRIMARY = "'DIN', 'Inter', sans-serif"
 const FONT_DISPLAY = "'Serpentine Bold Oblique', 'Anton', sans-serif"
 
-// ─── Datos de productos ───────────────────────────────────────────────────────
+// ─── Datos de productos (6 SKUs, imágenes HTTPS) ─────────────────────────────
 const PRODUCTS = [
   {
     id: 1,
-    name: 'VENOCO 4.PNG',
-    title: 'SINTÉTICO / HEAVY DUTY',
-    desc: 'Máxima protección contra el desgaste térmico y fricción extrema en motores de alto rendimiento.',
-    src: 'https://venoco.com/wp-content/uploads/2026/09/4.png',
-    link: 'https://venoco.com/wp-content/uploads/2026/09/4.png',
+    name: 'EXPERT EXTRA PLUS',
+    category: 'LUBRICANTE MULTIGRADO',
+    title: 'MÁXIMO RENDIMIENTO Y PROTECCIÓN',
+    desc: 'Protección avanzada contra el desgaste y control térmico en motores de alta exigencia.',
+    src: 'https://venoco.com/wp-content/uploads/2026/09/Expert-Extra-plus.png',
+    bgImage: 'https://venoco.com/wp-content/uploads/2026/09/8-1.png',
+    link: '#productos',
     bg: '#0033a0',
     panel: '#002470',
   },
   {
     id: 2,
-    name: 'VENOCO 3.PNG',
-    title: 'TECNOLOGÍA MULTIGRADO',
-    desc: 'Formulación avanzada con aditivos detergentes que garantizan la máxima limpieza del motor.',
-    src: 'https://venoco.com/wp-content/uploads/2026/09/3.png',
-    link: 'https://venoco.com/wp-content/uploads/2026/09/3.png',
+    name: 'EXPERT EXTRA',
+    category: 'LUBRICANTE PARA MOTOR',
+    title: 'LIMPIEZA Y DURABILIDAD',
+    desc: 'Mantiene el motor limpio y protegido contra la fricción diaria, garantizando excelente rotación comercial.',
+    src: 'https://venoco.com/wp-content/uploads/2026/09/expert-extra.png',
+    bgImage: 'https://venoco.com/wp-content/uploads/2026/09/9-1.png',
+    link: '#productos',
     bg: '#ffed00',
     panel: '#e6d500',
   },
   {
     id: 3,
-    name: 'VENOCO 2.PNG',
-    title: 'PROTECCIÓN INDUSTRIAL',
-    desc: 'Lubricante especializado para maquinaria pesada y condiciones de alta exigencia operacional.',
-    src: 'https://venoco.com/wp-content/uploads/2026/09/2.png',
-    link: 'https://venoco.com/wp-content/uploads/2026/09/2.png',
+    name: 'EXPERT PLUS',
+    category: 'PROTECCIÓN CONTINUA',
+    title: 'EFICIENCIA Y VIDA ÚTIL',
+    desc: 'Formulación para extender la vida operativa del motor con respuesta fluida en cada marcha.',
+    src: 'https://venoco.com/wp-content/uploads/2026/09/expert-plus.png',
+    bgImage: 'https://venoco.com/wp-content/uploads/2026/09/10-1.png',
+    link: '#productos',
     bg: '#002470',
     panel: '#001b54',
   },
   {
     id: 4,
-    name: 'VENOCO 1.PNG',
-    title: 'LUBRICACIÓN DE PRECISIÓN',
-    desc: 'Desarrollado con estándares B2B e industriales para extender la vida útil de cada componente.',
-    src: 'https://venoco.com/wp-content/uploads/2026/09/1.png',
-    link: 'https://venoco.com/wp-content/uploads/2026/09/1.png',
+    name: 'EXPERT POWER',
+    category: 'ALTA POTENCIA',
+    title: 'RESISTENCIA EN USO CONTINUO',
+    desc: 'Película protectora de máxima adherencia para responder ante aceleraciones y exigencia constante.',
+    src: 'https://venoco.com/wp-content/uploads/2026/09/expert-power.png',
+    bgImage: 'https://venoco.com/wp-content/uploads/2026/09/11-1.png',
+    link: '#productos',
     bg: '#111111',
     panel: '#333333',
   },
+  {
+    id: 5,
+    name: 'MOTORES 2 TIEMPOS POWER',
+    category: 'LUBRICANTE ESPECIALIZADO 2T',
+    title: 'POTENCIA Y RESPUESTA INMEDIATA',
+    desc: 'Combustión limpia sin residuos para motores 2 tiempos de motos y equipos ligeros.',
+    src: 'https://venoco.com/wp-content/uploads/2026/09/motores-2-tiempospower.png',
+    bgImage: 'https://venoco.com/wp-content/uploads/2026/09/13.png',
+    link: '#productos',
+    bg: '#0033a0',
+    panel: '#002470',
+  },
+  {
+    id: 6,
+    name: 'TRANSMISIÓN',
+    category: 'FLUIDO DE TRANSMISIÓN',
+    title: 'SUAVIDAD EN CAMBIOS Y ENGRANAJES',
+    desc: 'Cuidado integral de la caja de cambios previniendo el sobrecalentamiento y la fricción.',
+    src: 'https://venoco.com/wp-content/uploads/2026/09/Transmision.png',
+    bgImage: 'https://venoco.com/wp-content/uploads/2026/09/12.png',
+    link: '#productos',
+    bg: '#ffed00',
+    panel: '#e6d500',
+  },
 ] as const
+
+const TOTAL = PRODUCTS.length
 
 type Product = (typeof PRODUCTS)[number]
 
-// ─── Lógica de posiciones circulares ─────────────────────────────────────────
+// ─── Posiciones circulares para N productos ───────────────────────────────────
 function getPositions(activeIndex: number) {
   return {
     center: activeIndex,
-    left: (activeIndex + 3) % 4,
-    right: (activeIndex + 1) % 4,
-    back: (activeIndex + 2) % 4,
+    left: (activeIndex - 1 + TOTAL) % TOTAL,
+    right: (activeIndex + 1) % TOTAL,
   }
 }
 
@@ -122,6 +155,7 @@ function getCardStyle(
           opacity: 0,
           filter: 'blur(4px)',
           zIndex: 1,
+          pointerEvents: 'none',
         }
     }
   }
@@ -170,6 +204,7 @@ function getCardStyle(
         opacity: 0,
         filter: 'blur(6px)',
         zIndex: 1,
+        pointerEvents: 'none',
       }
   }
 }
@@ -180,7 +215,7 @@ export default function ToonhubVenocoHero() {
   const [isAnimating, setIsAnimating] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
 
-  // Inyectar Google Fonts en el <head> del documento (necesario en Elementor donde no se sirve index.html)
+  // Inyectar Google Fonts en document.head (idempotente; Elementor no sirve index.html)
   useEffect(() => {
     const id = 'toonhub-venoco-fonts'
     if (document.getElementById(id)) return
@@ -208,11 +243,13 @@ export default function ToonhubVenocoHero() {
     return () => mq.removeEventListener('change', handler)
   }, [])
 
-  // Precargar imágenes
+  // Precargar imágenes de producto y fondos
   useEffect(() => {
     PRODUCTS.forEach((p) => {
-      const img = new Image()
-      img.src = p.src
+      const img1 = new Image()
+      img1.src = p.src
+      const img2 = new Image()
+      img2.src = p.bgImage
     })
   }, [])
 
@@ -220,16 +257,19 @@ export default function ToonhubVenocoHero() {
     (dir: 1 | -1) => {
       if (isAnimating) return
       setIsAnimating(true)
-      setActiveIndex((prev) => (prev + dir + 4) % 4)
+      setActiveIndex((prev) => (prev + dir + TOTAL) % TOTAL)
       setTimeout(() => setIsAnimating(false), 650)
     },
     [isAnimating],
   )
 
+  const handleCtaClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    document.getElementById('productos')?.scrollIntoView({ behavior: 'smooth' })
+  }, [])
+
   const active: Product = PRODUCTS[activeIndex]
   const positions = getPositions(activeIndex)
-
-  // Color de texto adaptativo: amarillo → tinta oscura, resto → blanco
   const textColor = active.bg === '#ffed00' ? '#002470' : '#ffffff'
 
   return (
@@ -246,6 +286,25 @@ export default function ToonhubVenocoHero() {
       }}
       aria-label="Carrusel de productos Venoco"
     >
+      {/* ── Capa 0: Imágenes de fondo con crossfade ──────────────────── */}
+      {PRODUCTS.map((p, idx) => (
+        <div
+          key={p.id}
+          aria-hidden="true"
+          style={{
+            position: 'absolute',
+            inset: 0,
+            backgroundImage: `url(${p.bgImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            opacity: idx === activeIndex ? 0.6 : 0,
+            transition: 'opacity 650ms cubic-bezier(0.4,0,0.2,1)',
+            zIndex: 0,
+            pointerEvents: 'none',
+          }}
+        />
+      ))}
+
       {/* ── Capa 1: Granulado SVG ───────────────────────────────────────── */}
       <svg
         aria-hidden="true"
@@ -254,9 +313,9 @@ export default function ToonhubVenocoHero() {
           inset: 0,
           width: '100%',
           height: '100%',
-          opacity: 0.18,
+          opacity: 0.14,
           pointerEvents: 'none',
-          zIndex: 0,
+          zIndex: 1,
         }}
       >
         <filter id="vnoise">
@@ -281,7 +340,7 @@ export default function ToonhubVenocoHero() {
           alignItems: 'center',
           justifyContent: 'center',
           pointerEvents: 'none',
-          zIndex: 1,
+          zIndex: 2,
           userSelect: 'none',
         }}
       >
@@ -302,16 +361,13 @@ export default function ToonhubVenocoHero() {
         </span>
       </div>
 
-      {/* ── Capa 3: Etiqueta de marca superior ────────────────────────── */}
+      {/* ── Capa 3: Etiqueta de marca superior izquierda ──────────────── */}
       <div
         style={{
           position: 'absolute',
           top: isMobile ? 16 : 24,
           left: isMobile ? 16 : 32,
           zIndex: 10,
-          display: 'flex',
-          alignItems: 'center',
-          gap: 8,
         }}
       >
         <span
@@ -330,7 +386,7 @@ export default function ToonhubVenocoHero() {
         </span>
       </div>
 
-      {/* ── Capa 4: Carrusel 3D ───────────────────────────────────────── */}
+      {/* ── Capa 4: Carrusel 3D (6 productos, 3 visibles) ────────────── */}
       <div
         style={{
           position: 'absolute',
@@ -368,51 +424,68 @@ export default function ToonhubVenocoHero() {
           zIndex: 10,
           display: 'flex',
           flexDirection: 'column',
-          gap: isMobile ? 10 : 16,
-          maxWidth: isMobile ? 'calc(100vw - 130px)' : 380,
+          gap: isMobile ? 8 : 14,
+          maxWidth: isMobile ? 'calc(100vw - 130px)' : 400,
         }}
       >
-        {/* Título del producto */}
-        <div>
-          <p
-            style={{
-              fontFamily: FONT_PRIMARY,
-              fontSize: 'clamp(10px, 1.4vw, 12px)',
-              fontWeight: 600,
-              letterSpacing: '1.4px',
-              textTransform: 'uppercase',
-              color: textColor,
-              opacity: 0.6,
-              marginBottom: 4,
-              transition: 'color 650ms cubic-bezier(0.4,0,0.2,1)',
-            }}
-          >
-            PRODUCTO ACTIVO
-          </p>
-          <h2
-            style={{
-              fontFamily: FONT_DISPLAY,
-              fontSize: isMobile ? 'clamp(18px, 5vw, 26px)' : 'clamp(24px, 3.2vw, 48px)',
-              fontWeight: 900,
-              lineHeight: 1.05,
-              letterSpacing: '-0.5px',
-              color: textColor,
-              transition: 'color 650ms cubic-bezier(0.4,0,0.2,1)',
-              margin: 0,
-            }}
-          >
-            {active.title}
-          </h2>
-        </div>
+        {/* Categoría */}
+        <p
+          style={{
+            fontFamily: FONT_PRIMARY,
+            fontSize: 'clamp(9px, 1.2vw, 11px)',
+            fontWeight: 700,
+            letterSpacing: '1.6px',
+            textTransform: 'uppercase',
+            color: textColor,
+            opacity: 0.6,
+            margin: 0,
+            transition: 'color 650ms cubic-bezier(0.4,0,0.2,1)',
+          }}
+        >
+          {active.category}
+        </p>
+
+        {/* Nombre del SKU */}
+        <p
+          style={{
+            fontFamily: FONT_PRIMARY,
+            fontSize: isMobile ? 'clamp(11px, 3vw, 14px)' : 'clamp(13px, 1.6vw, 18px)',
+            fontWeight: 700,
+            letterSpacing: '0.5px',
+            textTransform: 'uppercase',
+            color: textColor,
+            opacity: 0.9,
+            margin: 0,
+            transition: 'color 650ms cubic-bezier(0.4,0,0.2,1)',
+          }}
+        >
+          {active.name}
+        </p>
+
+        {/* Titular */}
+        <h2
+          style={{
+            fontFamily: FONT_DISPLAY,
+            fontSize: isMobile ? 'clamp(16px, 4.5vw, 24px)' : 'clamp(22px, 2.8vw, 42px)',
+            fontWeight: 900,
+            lineHeight: 1.05,
+            letterSpacing: '-0.5px',
+            color: textColor,
+            transition: 'color 650ms cubic-bezier(0.4,0,0.2,1)',
+            margin: 0,
+          }}
+        >
+          {active.title}
+        </h2>
 
         {/* Descripción */}
         <p
           style={{
             fontFamily: FONT_PRIMARY,
-            fontSize: isMobile ? 12 : 'clamp(13px, 1.3vw, 15px)',
-            lineHeight: 1.5,
+            fontSize: isMobile ? 11 : 'clamp(12px, 1.2vw, 14px)',
+            lineHeight: 1.55,
             color: textColor,
-            opacity: 0.78,
+            opacity: 0.75,
             transition: 'color 650ms cubic-bezier(0.4,0,0.2,1)',
             margin: 0,
           }}
@@ -421,7 +494,7 @@ export default function ToonhubVenocoHero() {
         </p>
 
         {/* Botones de navegación */}
-        <div style={{ display: 'flex', gap: 12 }}>
+        <div style={{ display: 'flex', gap: 10 }}>
           <button
             onClick={() => navigate(-1)}
             disabled={isAnimating}
@@ -472,7 +545,7 @@ export default function ToonhubVenocoHero() {
         </div>
       </div>
 
-      {/* ── Capa 6: CTA inferior derecho ──────────────────────────────── */}
+      {/* ── Capa 6: CTA inferior derecho → smooth scroll a #productos ─── */}
       <div
         style={{
           position: 'absolute',
@@ -482,9 +555,8 @@ export default function ToonhubVenocoHero() {
         }}
       >
         <a
-          href={active.link}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="#productos"
+          onClick={handleCtaClick}
           style={{
             display: 'inline-flex',
             alignItems: 'center',
@@ -501,7 +573,8 @@ export default function ToonhubVenocoHero() {
             textTransform: 'uppercase',
             textDecoration: 'none',
             color: textColor,
-            transition: 'color 650ms cubic-bezier(0.4,0,0.2,1), border-color 650ms cubic-bezier(0.4,0,0.2,1)',
+            transition:
+              'color 650ms cubic-bezier(0.4,0,0.2,1), border-color 650ms cubic-bezier(0.4,0,0.2,1)',
             whiteSpace: 'nowrap',
           }}
         >
@@ -510,7 +583,7 @@ export default function ToonhubVenocoHero() {
         </a>
       </div>
 
-      {/* ── Indicadores de posición ───────────────────────────────────── */}
+      {/* ── Indicadores de posición (6 puntos) ───────────────────────── */}
       <div
         aria-hidden="true"
         style={{
@@ -519,7 +592,7 @@ export default function ToonhubVenocoHero() {
           right: isMobile ? 16 : 32,
           zIndex: 10,
           display: 'flex',
-          gap: 6,
+          gap: 5,
           alignItems: 'center',
         }}
       >
@@ -531,7 +604,7 @@ export default function ToonhubVenocoHero() {
               height: 6,
               borderRadius: 3,
               background: textColor,
-              opacity: idx === activeIndex ? 1 : 0.35,
+              opacity: idx === activeIndex ? 1 : 0.3,
               transition:
                 'width 650ms cubic-bezier(0.4,0,0.2,1), opacity 650ms cubic-bezier(0.4,0,0.2,1), background-color 650ms cubic-bezier(0.4,0,0.2,1)',
             }}
