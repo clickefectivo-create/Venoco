@@ -111,8 +111,8 @@ function getCardStyle(
       case 'center':
         return {
           ...base,
-          width: '52vw',
-          maxWidth: 220,
+          width: '100vw',
+          maxWidth: 440,
           bottom: '8%',
           left: '50%',
           transform: 'translateX(-50%) translateZ(0)',
@@ -123,10 +123,10 @@ function getCardStyle(
       case 'left':
         return {
           ...base,
-          width: '36vw',
-          maxWidth: 160,
+          width: '72vw',
+          maxWidth: 320,
           bottom: '6%',
-          left: '6%',
+          left: '2%',
           transform: 'rotate(-12deg) translateZ(0)',
           opacity: 0.5,
           filter: 'blur(1.5px)',
@@ -135,10 +135,10 @@ function getCardStyle(
       case 'right':
         return {
           ...base,
-          width: '36vw',
-          maxWidth: 160,
+          width: '72vw',
+          maxWidth: 320,
           bottom: '6%',
-          right: '6%',
+          right: '2%',
           transform: 'rotate(12deg) translateZ(0)',
           opacity: 0.5,
           filter: 'blur(1.5px)',
@@ -147,8 +147,8 @@ function getCardStyle(
       case 'back':
         return {
           ...base,
-          width: '28vw',
-          maxWidth: 130,
+          width: '56vw',
+          maxWidth: 260,
           bottom: '10%',
           left: '50%',
           transform: 'translateX(-50%) translateZ(0)',
@@ -164,7 +164,7 @@ function getCardStyle(
     case 'center':
       return {
         ...base,
-        width: 'clamp(240px, 22vw, 400px)',
+        width: 'clamp(480px, 44vw, 800px)',
         bottom: '6%',
         left: '50%',
         transform: 'translateX(-50%) translateZ(0)',
@@ -175,9 +175,9 @@ function getCardStyle(
     case 'left':
       return {
         ...base,
-        width: 'clamp(160px, 14vw, 280px)',
+        width: 'clamp(320px, 28vw, 560px)',
         bottom: '4%',
-        left: 'clamp(40px, 12vw, 180px)',
+        left: 'clamp(20px, 4vw, 80px)',
         transform: 'rotate(-14deg) translateZ(0)',
         opacity: 0.55,
         filter: 'blur(2px)',
@@ -186,9 +186,9 @@ function getCardStyle(
     case 'right':
       return {
         ...base,
-        width: 'clamp(160px, 14vw, 280px)',
+        width: 'clamp(320px, 28vw, 560px)',
         bottom: '4%',
-        right: 'clamp(40px, 12vw, 180px)',
+        right: 'clamp(20px, 4vw, 80px)',
         transform: 'rotate(14deg) translateZ(0)',
         opacity: 0.55,
         filter: 'blur(2px)',
@@ -197,7 +197,7 @@ function getCardStyle(
     case 'back':
       return {
         ...base,
-        width: 'clamp(120px, 10vw, 200px)',
+        width: 'clamp(240px, 20vw, 400px)',
         bottom: '8%',
         left: '50%',
         transform: 'translateX(-50%) translateZ(0)',
@@ -297,7 +297,7 @@ export default function ToonhubVenocoHero() {
             backgroundImage: `url(${p.bgImage})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            opacity: idx === activeIndex ? 0.6 : 0,
+            opacity: idx === activeIndex ? 0.2 : 0,
             transition: 'opacity 650ms cubic-bezier(0.4,0,0.2,1)',
             zIndex: 0,
             pointerEvents: 'none',
@@ -330,36 +330,7 @@ export default function ToonhubVenocoHero() {
         <rect width="100%" height="100%" filter="url(#vnoise)" />
       </svg>
 
-      {/* ── Capa 2: Texto "VENOCO" gigante de fondo ────────────────────── */}
-      <div
-        aria-hidden="true"
-        style={{
-          position: 'absolute',
-          inset: 0,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          pointerEvents: 'none',
-          zIndex: 2,
-          userSelect: 'none',
-        }}
-      >
-        <span
-          style={{
-            fontFamily: FONT_DISPLAY,
-            fontSize: 'clamp(90px, 26vw, 380px)',
-            fontWeight: 900,
-            lineHeight: 1,
-            letterSpacing: '-2px',
-            color: textColor,
-            opacity: 0.15,
-            transition: 'color 650ms cubic-bezier(0.4,0,0.2,1)',
-            whiteSpace: 'nowrap',
-          }}
-        >
-          VENOCO
-        </span>
-      </div>
+      {/* Capa 2: watermark eliminado */}
 
       {/* ── Capa 3: Etiqueta de marca superior izquierda ──────────────── */}
       <div
