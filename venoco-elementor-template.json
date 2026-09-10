@@ -1,0 +1,492 @@
+{
+  "version": "0.4",
+  "title": "Venoco Landing Page",
+  "type": "page",
+  "content": [
+    {
+      "id": "62d6928f",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#0033a0",
+        "padding": {
+          "unit": "px",
+          "top": "7",
+          "right": "20",
+          "bottom": "7",
+          "left": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "e0cdee57",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "a2aee368",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='margin:0;font-size:13px;letter-spacing:.4px;color:#fff;text-align:center'>&#9733; Nueva colección SP 2026 disponible &nbsp;·&nbsp; Visita tu distribuidor más cercano &nbsp;·&nbsp; <a href='mailto:ventas@venoco.com' style='color:#ffed00;text-decoration:none'>ventas@venoco.com</a></p>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "72b71a96",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "12",
+          "right": "24",
+          "bottom": "12",
+          "left": "24",
+          "isLinked": false
+        },
+        "border_bottom_width": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "1",
+          "left": "0",
+          "isLinked": false
+        },
+        "border_color": "#e0e0e0",
+        "sticky": "top",
+        "sticky_on": [
+          "desktop",
+          "tablet",
+          "mobile"
+        ],
+        "sticky_offset": 0,
+        "sticky_effects_offset": 0
+      },
+      "elements": [
+        {
+          "id": "1b185d57",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "7d596462",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<nav style='display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:0'>\n  <a href='#' style='flex-shrink:0'>\n    <img src='http://venoco.com/wp-content/uploads/2026/09/logo-venoco.png' alt='Venoco' style='height:64px;width:auto' onerror=\"this.style.display='none';this.nextElementSibling.style.display='block'\">\n    <svg style='display:none;height:64px;width:auto' viewBox='0 0 220 220' xmlns='http://www.w3.org/2000/svg'>\n      <ellipse cx='110' cy='110' rx='100' ry='80' fill='#ffed00'/>\n      <path d='M20 70 Q60 10 145 45 Q175 58 200 80 Q165 30 110 28 Q60 26 20 70Z' fill='#0033a0'/>\n      <path d='M200 150 Q160 210 75 175 Q45 162 20 140 Q55 190 110 192 Q160 194 200 150Z' fill='#0033a0'/>\n      <text x='110' y='122' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-style='italic' font-size='46' fill='white' stroke='white' stroke-width='3' paint-order='stroke'>venoco</text>\n      <text x='110' y='122' text-anchor='middle' font-family='Arial,sans-serif' font-weight='900' font-style='italic' font-size='46' fill='#0033a0'>venoco</text>\n    </svg>\n  </a>\n  <ul style='display:flex;align-items:center;gap:24px;list-style:none;margin:0;padding:0;flex-wrap:wrap'>\n    <li><a href='#quienes' style='font-family:Barlow,Arial,sans-serif;font-weight:600;font-size:15px;color:#1a1a1a;text-decoration:none;white-space:nowrap'>Quiénes somos</a></li>\n    <li><a href='#productos' style='font-family:Barlow,Arial,sans-serif;font-weight:600;font-size:15px;color:#1a1a1a;text-decoration:none;white-space:nowrap'>Productos</a></li>\n    <li><a href='#faq' style='font-family:Barlow,Arial,sans-serif;font-weight:600;font-size:15px;color:#1a1a1a;text-decoration:none;white-space:nowrap'>FAQ</a></li>\n    <li><a href='#contacto' style='font-family:Barlow,Arial,sans-serif;font-weight:600;font-size:15px;color:#1a1a1a;text-decoration:none;white-space:nowrap'>Contacto</a></li>\n    <li><a href='#contacto' style='display:inline-flex;align-items:center;padding:10px 22px;background:#0033a0;color:#fff;border-radius:8px;font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap'>Distribuidor</a></li>\n  </ul>\n</nav>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fce51b19",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#0033a0",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "997f35cc",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 55
+          },
+          "elements": [
+            {
+              "id": "1d265dba",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style='padding:60px 0 60px'>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2.5px;color:#ffed00;text-transform:uppercase;margin-bottom:16px'>66 años de trayectoria · Venezuela</p>\n  <h1 style='font-family:Barlow,\"Arial Black\",Arial,sans-serif;font-size:clamp(32px,4vw,54px);font-weight:900;font-style:italic;line-height:1.05;color:#fff;margin-bottom:20px;text-wrap:balance'>Lubricantes que<br>protegen cada kilómetro</h1>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:18px;line-height:1.6;color:rgba(255,255,255,.85);max-width:480px;margin-bottom:32px'>Aceites semisintéticos y sintéticos formulados para el clima y las rutas de Venezuela. Calidad API certificada, disponible en todo el país.</p>\n  <div style='display:flex;gap:12px;flex-wrap:wrap'>\n    <a href='#productos' style='display:inline-flex;align-items:center;padding:14px 28px;background:#ffed00;color:#1a1a1a;border-radius:8px;font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:16px;text-decoration:none'>Ver catálogo completo</a>\n    <a href='#contacto' style='display:inline-flex;align-items:center;padding:14px 28px;background:transparent;color:#fff;border:2px solid rgba(255,255,255,.5);border-radius:8px;font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:16px;text-decoration:none'>Contactar distribuidor</a>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "d23b5d94",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 45
+          },
+          "elements": [
+            {
+              "id": "0c1efb3e",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style='display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:60px 0'>\n  <div style='background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:24px;text-align:center;backdrop-filter:blur(4px)'>\n    <div style='font-family:Barlow,Arial,sans-serif;font-size:42px;font-weight:900;color:#ffed00;line-height:1'>66</div>\n    <div style='font-family:Barlow,Arial,sans-serif;font-size:13px;color:rgba(255,255,255,.8);margin-top:4px'>Años de experiencia</div>\n  </div>\n  <div style='background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:24px;text-align:center;backdrop-filter:blur(4px)'>\n    <div style='font-family:Barlow,Arial,sans-serif;font-size:42px;font-weight:900;color:#ffed00;line-height:1'>17</div>\n    <div style='font-family:Barlow,Arial,sans-serif;font-size:13px;color:rgba(255,255,255,.8);margin-top:4px'>Referencias activas</div>\n  </div>\n  <div style='background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:24px;text-align:center;backdrop-filter:blur(4px)'>\n    <div style='font-family:Barlow,Arial,sans-serif;font-size:42px;font-weight:900;color:#ffed00;line-height:1'>6</div>\n    <div style='font-family:Barlow,Arial,sans-serif;font-size:13px;color:rgba(255,255,255,.8);margin-top:4px'>Categorías de producto</div>\n  </div>\n  <div style='background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:24px;text-align:center;backdrop-filter:blur(4px)'>\n    <div style='font-family:Barlow,Arial,sans-serif;font-size:42px;font-weight:900;color:#ffed00;line-height:1'>API</div>\n    <div style='font-family:Barlow,Arial,sans-serif;font-size:13px;color:rgba(255,255,255,.8);margin-top:4px'>Calidad certificada</div>\n  </div>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1db68642",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "498f2ee8",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 55
+          },
+          "elements": [
+            {
+              "id": "21c59ed2",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style='padding:60px 0'>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2.5px;color:#0033a0;text-transform:uppercase;margin-bottom:12px' id='quienes'>QUIÉNES SOMOS</p>\n  <h2 style='font-family:Barlow,\"Arial Black\",Arial,sans-serif;font-size:clamp(26px,3vw,40px);font-weight:900;line-height:1.1;color:#1a1a1a;margin-bottom:16px;text-wrap:balance'>Seis décadas cuidando los motores de Venezuela</h2>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:16px;line-height:1.65;color:#5c5c5c;margin-bottom:28px;max-width:520px'>Desde 1960, Venoco fabrica y distribuye lubricantes automotrices e industriales que cumplen con las especificaciones internacionales más exigentes. Nuestra red de distribución cubre todo el territorio nacional.</p>\n  <div style='display:flex;flex-direction:column;gap:16px;margin-bottom:28px'>\n    <div style='display:flex;align-items:flex-start;gap:14px'>\n      <div style='flex-shrink:0;width:40px;height:40px;background:#f0f4ff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px'>🔬</div>\n      <div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:15px;color:#0033a0;margin-bottom:2px'>Formulación propia</div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-size:14px;color:#5c5c5c'>Desarrollamos cada producto con bases de alta calidad y aditivos seleccionados para el clima venezolano.</div>\n      </div>\n    </div>\n    <div style='display:flex;align-items:flex-start;gap:14px'>\n      <div style='flex-shrink:0;width:40px;height:40px;background:#f0f4ff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px'>✅</div>\n      <div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:15px;color:#0033a0;margin-bottom:2px'>Certificación API / JASO / ASTM</div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-size:14px;color:#5c5c5c'>Cada lote cumple los estándares internacionales más rigurosos antes de llegar al distribuidor.</div>\n      </div>\n    </div>\n    <div style='display:flex;align-items:flex-start;gap:14px'>\n      <div style='flex-shrink:0;width:40px;height:40px;background:#f0f4ff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px'>🚗</div>\n      <div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:15px;color:#0033a0;margin-bottom:2px'>Red nacional</div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-size:14px;color:#5c5c5c'>Distribuidores y lubricentros aliados en todo el país para que siempre tengas Venoco cerca.</div>\n      </div>\n    </div>\n  </div>\n  <a href='#contacto' style='display:inline-flex;align-items:center;padding:12px 26px;background:#0033a0;color:#fff;border-radius:8px;font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:15px;text-decoration:none'>Hablar con un asesor</a>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "2e70ce0a",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 45
+          },
+          "elements": [
+            {
+              "id": "796228b9",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style='height:100%;min-height:320px;background:linear-gradient(135deg,#0033a0 0%,#0050e0 100%);border-radius:16px;display:flex;align-items:center;justify-content:center;overflow:hidden'>\n  <img src='http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT_PLUS_SN_20W-50.jpg' alt='Venoco Expert Plus' style='max-height:280px;object-fit:contain;filter:drop-shadow(0 8px 24px rgba(0,0,0,.3))'>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5057d8c3",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_image": {
+          "url": "http://venoco.com/wp-content/uploads/2026/09/caracasvenoco.jpg",
+          "id": "",
+          "size": "",
+          "alt": "",
+          "source": "library"
+        },
+        "background_size": "cover",
+        "background_position": "center center",
+        "background_repeat": "no-repeat",
+        "background_overlay_background": "classic",
+        "background_overlay_color": "rgba(0,12,42,0.6)",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "1a8f9d6e",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "615f855b",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style='text-align:center;padding:80px 20px'>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2.5px;color:#ffed00;text-transform:uppercase;margin-bottom:16px'>EDICIÓN ESPECIAL</p>\n  <h2 style='font-family:Barlow,\"Arial Black\",Arial,sans-serif;font-size:clamp(30px,5vw,58px);font-weight:900;font-style:italic;line-height:1.05;color:#fff;margin-bottom:20px;text-wrap:balance'>66 Aniversario<br>Venoco</h2>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:18px;color:rgba(255,255,255,.85);max-width:500px;margin:0 auto 32px'>Seis décadas de compromiso con los motores de Venezuela. Descubre la línea conmemorativa.</p>\n  <a href='#productos' style='display:inline-flex;align-items:center;padding:14px 32px;background:#ffed00;color:#1a1a1a;border-radius:8px;font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:16px;text-decoration:none'>Ver colección</a>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dd79129e",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#f7f7f7",
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "right": "24",
+          "bottom": "60",
+          "left": "24",
+          "isLinked": false
+        },
+        "custom_id": "productos"
+      },
+      "elements": [
+        {
+          "id": "09b79724",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "97c345f4",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<link href='https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap' rel='stylesheet'>\n<style>\n#vnk{font-family:Barlow,Arial,sans-serif;color:#1a1a1a}\n.vnk-h2{font-size:clamp(22px,3vw,32px);font-weight:700;color:#0033a0;text-align:center;margin-bottom:8px}\n.vnk-sub{text-align:center;color:#5c5c5c;margin-bottom:28px;font-size:16px}\n.vnk-tabs{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-bottom:24px}\n.vnk-tab{padding:8px 18px;background:#f0f4ff;border:2px solid transparent;border-radius:20px;cursor:pointer;font-weight:600;font-size:13px;color:#0033a0;transition:.2s;font-family:Barlow,Arial,sans-serif}\n.vnk-tab.active,.vnk-tab:hover{background:#0033a0;color:#fff}\n.vnk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}\n.vnk-card{background:#fff;border-radius:12px;padding:16px;box-shadow:0 2px 8px rgba(0,51,160,.1);cursor:pointer;transition:.2s;border:2px solid transparent}\n.vnk-card:hover{transform:translateY(-4px);box-shadow:0 8px 20px rgba(0,51,160,.18);border-color:#0033a0}\n.vnk-card img{width:100%;height:160px;object-fit:contain;margin-bottom:10px;background:#f7f7f7;border-radius:6px}\n.vnk-card h3{font-size:14px;font-weight:700;color:#0033a0;margin-bottom:4px;line-height:1.3}\n.vnk-card p{font-size:12px;color:#5c5c5c;line-height:1.4;margin-bottom:8px}\n.vnk-badges{display:flex;gap:4px;flex-wrap:wrap}\n.vnk-badge{background:#f0f4ff;color:#0033a0;padding:2px 7px;border-radius:10px;font-size:11px;font-weight:600}\n.vnk-modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:99999;align-items:center;justify-content:center;padding:16px}\n.vnk-modal-bg.open{display:flex}\n.vnk-modal{background:#fff;border-radius:16px;max-width:560px;width:100%;max-height:90vh;overflow-y:auto;padding:28px;position:relative}\n.vnk-modal-close{position:absolute;top:12px;right:16px;font-size:22px;cursor:pointer;background:none;border:none;color:#5c5c5c;line-height:1}\n.vnk-modal img{width:100%;max-height:200px;object-fit:contain;background:#f7f7f7;border-radius:8px;margin-bottom:14px}\n.vnk-modal h2{color:#0033a0;font-size:20px;font-weight:700;margin-bottom:10px}\n.vnk-modal ul{padding-left:18px;margin-top:10px}\n.vnk-modal ul li{margin-bottom:6px;font-size:14px;color:#1a1a1a}\n.vnk-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;background:#0033a0;color:#fff;border:none;border-radius:8px;font-weight:700;font-size:14px;cursor:pointer;margin-top:16px;font-family:Barlow,Arial,sans-serif;text-decoration:none}\n.vnk-btn:hover{background:#00267a}\n@media(max-width:520px){.vnk-grid{grid-template-columns:1fr 1fr}}\n@media(max-width:360px){.vnk-grid{grid-template-columns:1fr}}\n</style>\n<div id='vnk'>\n  <h2 class='vnk-h2'>Catálogo de Productos</h2>\n  <p class='vnk-sub'>17 referencias · 6 categorías · Calidad certificada API / JASO / ASTM</p>\n  <div class='vnk-tabs' id='vTabs'></div>\n  <div class='vnk-grid' id='vGrid'></div>\n</div>\n<div class='vnk-modal-bg' id='vModal'>\n  <div class='vnk-modal'>\n    <button class='vnk-modal-close' onclick='document.getElementById(\"vModal\").classList.remove(\"open\")'>&#x2715;</button>\n    <div id='vModalBody'></div>\n  </div>\n</div>\n<script>\nvar PROD=[\n  {cat:'Expert Plus',sku:'Expert Plus SN 20W-50',uso:'Lubricante mineral multigrado de alto desempeño para motores a gasolina, GLP y GNV.',specs:['SAE 20W-50','API SN'],pres:['1 L'],bullets:['Reduce consumo de aceite y mantiene la compresión.','Rápida lubricación en el encendido.','Elevada resistencia a la oxidación.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT_PLUS_SN_20W-50.jpg'},\n  {cat:'Expert Extra',sku:'Expert Extra SP 10W-30',uso:'Lubricante semisintético para motores a gasolina, GLP y GNV bajo especificación API SP.',specs:['SAE 10W-30','API SP'],pres:['1 L'],bullets:['Menor degradación y mayor estabilidad térmica.','Mínima formación de depósitos.','Rápida lubricación en arranque en frío.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT-EXTRA-SP-10W-30.jpg'},\n  {cat:'Expert Extra',sku:'Expert Extra SP 20W-50',uso:'Lubricante semisintético de alta viscosidad para condiciones severas de operación.',specs:['SAE 20W-50','API SP'],pres:['1 L'],bullets:['Alta estabilidad térmica.','Reducida formación de depósitos y lodos.','Película lubricante resistente.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT-EXTRAS-SP-20W-50.jpg'},\n  {cat:'Expert Extra',sku:'Expert Extra SP 15W-40',uso:'Lubricante semisintético para motores a gasolina con máxima protección API SP.',specs:['SAE 15W-40','API SP'],pres:['1 L'],bullets:['Protección avanzada contra LSPI.','Minimiza desgaste de componentes internos.','Optimiza el rendimiento del combustible.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT-EXTRA-SP-15W-40.jpg'},\n  {cat:'Expert Extra Plus',sku:'Expert Extra Plus SP 0W-20',uso:'Lubricante 100% sintético de ultra baja viscosidad para motores modernos de alta eficiencia.',specs:['SAE 0W-20','API SP'],pres:['1 L'],bullets:['Fluidez inmediata en el arranque.','Optimiza el ahorro de combustible.','Control de depósitos y LSPI.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT_EXTRA_PLUS_SN_0W-20.jpg'},\n  {cat:'Expert Extra Plus',sku:'Expert Extra Plus SP 5W-20',uso:'Lubricante 100% sintético para motores a gasolina con máxima fluidez y economía energética.',specs:['SAE 5W-20','API SP'],pres:['1 L'],bullets:['Protección inmediata desde el encendido.','Excepcional estabilidad térmica.','Mantiene el motor limpio.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT_EXTRA_PLUS_SN_5W-20.jpg'},\n  {cat:'Expert Extra Plus',sku:'Expert Extra Plus SP 5W-30',uso:'Lubricante 100% sintético para motores modernos con turbocargador e inyección directa.',specs:['SAE 5W-30','API SP'],pres:['1 L'],bullets:['Fluye en menos de 3 segundos.','Control de depósitos y barnices.','Protección contra LSPI.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT_EXTRA_PLUS_SN_5W-30-1.png'},\n  {cat:'Expert Extra Plus',sku:'Expert Extra Plus SP 10W-30',uso:'Lubricante 100% sintético para máxima protección de motores a gasolina de última generación.',specs:['SAE 10W-30','API SP'],pres:['1 L'],bullets:['Menor degradación y mayor intervalo entre cambios.','Película lubricante estable.','Protección contra desgaste y corrosión.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT_EXTRA_PLUS_SN_10W-30.jpg'},\n  {cat:'Expert Extra Plus',sku:'Expert Extra Plus SP 10W-40',uso:'Lubricante 100% sintético para motores a gasolina en condiciones de operación severas.',specs:['SAE 10W-40','API SP'],pres:['1 L'],bullets:['Película estable a altas temperaturas.','Protección contra desgaste y corrosión.','Control de depósitos en motores modernos.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT_EXTRA_PLUS_SN_10W-40.jpg'},\n  {cat:'Expert Power 4T',sku:'Expert Power 4T SL 20W-50 JASO MA-2',uso:'Lubricante multigrado para motocicletas de 4 tiempos con aditivos de última tecnología.',specs:['SAE 20W-50','API SL','JASO MA-2'],pres:['1 L'],bullets:['Óptima transferencia de potencia.','Excelente estabilidad térmica.','Máxima capacidad antidesgaste.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_EXPERT_POWER_4T_SN_20W-50.jpg'},\n  {cat:'Venoco 2T',sku:'Venoco 2T Aire API TC JASO FB',uso:'Lubricante para motores de motocicletas de 2 tiempos enfriados por aire.',specs:['API TC','JASO FB'],pres:['1 L'],bullets:['Minimiza depósitos en cámara y bujías.','Evita la preignición.','Se diluye fácilmente con gasolina.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_2T_Aire_API_TC.jpg'},\n  {cat:'Venoco 2T',sku:'Venoco 2T Agua TC-W3',uso:'Lubricante para motores fuera de borda de 2 tiempos enfriados por agua.',specs:['TC-W3'],pres:['1 L'],bullets:['Para motores fuera de borda y aplicaciones acuáticas.','Minimiza depósitos en cámara y bujías.','Excelente miscibilidad con gasolina.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_2T_Agua_TC-W3.jpg'},\n  {cat:'Transmisión',sku:'Venoco ATF D-III (auto)',uso:'Fluido para transmisiones automáticas Dexron III / Mercon.',specs:['ATF','Dexron III','Mercon'],pres:['1 L'],bullets:['Gran estabilidad a la oxidación.','Aditivos antidesgaste y anticorrosivos.','Compatible con sellos del sistema.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_ATF_D-III.jpg'},\n  {cat:'Transmisión',sku:'Venoco GL-5 80W-90 (manual)',uso:'Aceite de extrema presión para engranajes y transmisiones manuales API GL-5.',specs:['SAE 80W-90','API GL-5'],pres:['1 L'],bullets:['Soporta torques extremos.','Excelente estabilidad contra la oxidación.','Propiedades antiherrumbre y anticorrosivas.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_GL-5_80W-90.jpg'},\n  {cat:'Transmisión',sku:'Venoco GL-5 85W-140 (manual)',uso:'Aceite de extrema presión para transmisiones manuales de trabajo pesado API GL-5.',specs:['SAE 85W-140','API GL-5'],pres:['1 L'],bullets:['Soporta cargas extremas.','Alta estabilidad térmica.','Protección integral contra desgaste.'],img:'http://venoco.com/wp-content/uploads/2026/09/1L_GL-5_85W-140.jpg'},\n  {cat:'Especialidades',sku:'Refrigerante Verde',uso:'Fluido refrigerante y anticongelante listo para usar.',specs:['Listo para usar'],pres:['Galón'],bullets:['Excelente transferencia térmica.','Previene sarro y óxido.','Seguro para mangueras y radiadores de aluminio.'],img:'http://venoco.com/wp-content/uploads/2026/09/Galon_Refrigerante_Verde.jpg'},\n  {cat:'Especialidades',sku:'Refrigerante Rojo',uso:'Fluido refrigerante de tecnología orgánica / larga duración (OAT/HOAT).',specs:['Larga duración'],pres:['Galón'],bullets:['Protección prolongada contra corrosión.','Excelente estabilidad térmica.','Inerte ante elastómeros y metales.'],img:'http://venoco.com/wp-content/uploads/2026/09/Galon_Refrigerante_Rojo.jpg'}\n];\nvar cats=[],cur='';\nPROD.forEach(function(p){if(cats.indexOf(p.cat)<0)cats.push(p.cat);});\ncur=cats[0];\nfunction renderTabs(){\n  document.getElementById('vTabs').innerHTML=cats.map(function(c){\n    return '<button class=\"vnk-tab'+(c===cur?' active':'')+'\" onclick=\"setCat(\\''+c.replace(/\\'/g,'\\\\\\'')+'\\')\">'+(c.replace('Expert ','').replace('Venoco ','').replace('Especialidades','Especialidades'))+'</button>';\n  }).join('');\n}\nfunction renderGrid(){\n  document.getElementById('vGrid').innerHTML=PROD.filter(function(p){return p.cat===cur;}).map(function(p){\n    var i=PROD.indexOf(p);\n    return '<div class=\"vnk-card\" onclick=\"openModal('+i+')\">'\n      +'<img src=\"'+p.img+'\" alt=\"'+p.sku+'\" loading=\"lazy\">'\n      +'<h3>'+p.sku+'</h3>'\n      +'<p>'+p.uso.substring(0,80)+'...</p>'\n      +'<div class=\"vnk-badges\">'+p.specs.map(function(s){return '<span class=\"vnk-badge\">'+s+'</span>';}).join('')+'</div>'\n      +'</div>';\n  }).join('');\n}\nfunction setCat(c){cur=c;renderTabs();renderGrid();}\nfunction openModal(i){\n  var p=PROD[i];\n  document.getElementById('vModalBody').innerHTML=\n    '<img src=\"'+p.img+'\" alt=\"'+p.sku+'\">'\n    +'<h2>'+p.sku+'</h2>'\n    +'<div class=\"vnk-badges\" style=\"margin-bottom:10px\">'+p.specs.map(function(s){return '<span class=\"vnk-badge\">'+s+'</span>';}).join('')+'</div>'\n    +'<p style=\"color:#5c5c5c;font-size:14px;margin-bottom:8px\">'+p.uso+'</p>'\n    +'<ul>'+p.bullets.map(function(b){return '<li>'+b+'</li>';}).join('')+'</ul>'\n    +'<a href=\"mailto:ventas@venoco.com\" class=\"vnk-btn\">Solicitar información</a>';\n  document.getElementById('vModal').classList.add('open');\n}\ndocument.getElementById('vModal').addEventListener('click',function(e){if(e.target===this)this.classList.remove('open');});\nrenderTabs();renderGrid();\n</script>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a9ae6376",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#ffffff",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "481dc21e",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 40
+          },
+          "elements": [
+            {
+              "id": "bab3fc4e",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style='padding:60px 0'>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2.5px;color:#0033a0;text-transform:uppercase;margin-bottom:12px' id='faq'>PREGUNTAS FRECUENTES</p>\n  <h2 style='font-family:Barlow,\"Arial Black\",Arial,sans-serif;font-size:clamp(24px,3vw,38px);font-weight:900;line-height:1.1;color:#1a1a1a;margin-bottom:16px;text-wrap:balance'>Todo lo que necesitas saber</h2>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:16px;line-height:1.65;color:#5c5c5c;margin-bottom:24px;max-width:420px'>Si tienes más dudas, nuestro equipo técnico está disponible para orientarte con la referencia ideal para tu vehículo.</p>\n  <a href='mailto:ventas@venoco.com' style='display:inline-flex;align-items:center;padding:12px 24px;background:transparent;color:#0033a0;border:2px solid #0033a0;border-radius:8px;font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:14px;text-decoration:none'>Preguntar al equipo</a>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "3d034e05",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 60,
+            "padding": {
+              "unit": "px",
+              "top": "60",
+              "right": "0",
+              "bottom": "60",
+              "left": "24",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "f89356cc",
+              "elType": "widget",
+              "widgetType": "accordion",
+              "settings": {
+                "tabs": [
+                  {
+                    "_id": "a4f32e77",
+                    "tab_title": "¿En qué presentaciones se consiguen los lubricantes Venoco?",
+                    "tab_content": "Depende de la referencia: la mayoría está disponible en envases de 1 litro y galón, y las líneas de mayor consumo también en balde de 5 galones y tambor de 55 galones."
+                  },
+                  {
+                    "_id": "b8572ef5",
+                    "tab_title": "¿Dónde puedo comprar los productos?",
+                    "tab_content": "A través de nuestra red de distribuidores y lubricentros aliados a nivel nacional. Use el buscador de distribuidor en el sitio o contáctenos para ubicar el punto más cercano."
+                  },
+                  {
+                    "_id": "c44b8947",
+                    "tab_title": "¿Cómo elijo el grado correcto para mi vehículo?",
+                    "tab_content": "Verifique la especificación SAE/API (o el estándar equivalente) que indica el manual del fabricante y compárela con las especificaciones de cada ficha técnica."
+                  },
+                  {
+                    "_id": "3a3e0654",
+                    "tab_title": "¿Con qué frecuencia debo cambiar el aceite?",
+                    "tab_content": "El intervalo lo define el fabricante del vehículo según el uso y las condiciones de manejo; la ficha técnica de cada producto indica los intervalos recomendados de referencia."
+                  },
+                  {
+                    "_id": "57afde66",
+                    "tab_title": "¿Los productos tienen garantía?",
+                    "tab_content": "Sí, todos los lotes cumplen la especificación declarada en su ficha técnica. Para reclamos de garantía, contacte a su distribuidor o a nuestro equipo comercial con el número de lote."
+                  }
+                ],
+                "active_item": 1
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "629fd919",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#0033a0",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "f9c5e4be",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 45
+          },
+          "elements": [
+            {
+              "id": "36e4e737",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style='padding:60px 0'>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:12px;font-weight:700;letter-spacing:2.5px;color:#ffed00;text-transform:uppercase;margin-bottom:12px' id='contacto'>CONTACTO</p>\n  <h2 style='font-family:Barlow,\"Arial Black\",Arial,sans-serif;font-size:clamp(24px,3vw,38px);font-weight:900;line-height:1.1;color:#fff;margin-bottom:16px;text-wrap:balance'>Hablemos de tu lubricante ideal</h2>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:16px;color:rgba(255,255,255,.8);margin-bottom:32px;max-width:440px'>Nuestro equipo técnico y comercial te orienta para elegir la referencia correcta y encontrar el distribuidor más cercano.</p>\n  <ul style='list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:16px'>\n    <li style='display:flex;align-items:center;gap:12px'>\n      <span style='font-size:20px'>📞</span>\n      <div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px'>Teléfono</div>\n        <a href='tel:+582121234567' style='font-family:Barlow,Arial,sans-serif;font-size:16px;color:#fff;text-decoration:none;font-weight:600'>+58 212 123 4567</a>\n      </div>\n    </li>\n    <li style='display:flex;align-items:center;gap:12px'>\n      <span style='font-size:20px'>✉️</span>\n      <div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px'>Correo</div>\n        <a href='mailto:ventas@venoco.com' style='font-family:Barlow,Arial,sans-serif;font-size:16px;color:#ffed00;text-decoration:none;font-weight:600'>ventas@venoco.com</a>\n      </div>\n    </li>\n    <li style='display:flex;align-items:center;gap:12px'>\n      <span style='font-size:20px'>📍</span>\n      <div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px'>Ubicación</div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-size:16px;color:#fff;font-weight:600'>Caracas, Venezuela</div>\n      </div>\n    </li>\n    <li style='display:flex;align-items:center;gap:12px'>\n      <span style='font-size:20px'>🕐</span>\n      <div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-size:12px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:1px;margin-bottom:2px'>Horario</div>\n        <div style='font-family:Barlow,Arial,sans-serif;font-size:16px;color:#fff;font-weight:600'>Lunes a viernes: 8 a.m. – 5 p.m.</div>\n      </div>\n    </li>\n  </ul>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "08a09ad1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 55
+          },
+          "elements": [
+            {
+              "id": "f9194991",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<div style='background:rgba(255,255,255,.1);border-radius:16px;padding:32px;backdrop-filter:blur(8px);margin:60px 0'>\n  <h3 style='font-family:Barlow,Arial,sans-serif;font-size:20px;font-weight:700;color:#fff;margin-bottom:20px'>Envíanos un mensaje</h3>\n  <form action='mailto:ventas@venoco.com' method='post' enctype='text/plain' style='display:flex;flex-direction:column;gap:14px'>\n    <div>\n      <label style='font-family:Barlow,Arial,sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,.8);display:block;margin-bottom:6px'>Nombre completo</label>\n      <input type='text' name='nombre' required placeholder='Tu nombre' style='width:100%;padding:11px 14px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:8px;color:#fff;font-family:Barlow,Arial,sans-serif;font-size:15px'>\n    </div>\n    <div>\n      <label style='font-family:Barlow,Arial,sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,.8);display:block;margin-bottom:6px'>Correo electrónico</label>\n      <input type='email' name='correo' required placeholder='tu@correo.com' style='width:100%;padding:11px 14px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:8px;color:#fff;font-family:Barlow,Arial,sans-serif;font-size:15px'>\n    </div>\n    <div>\n      <label style='font-family:Barlow,Arial,sans-serif;font-size:13px;font-weight:600;color:rgba(255,255,255,.8);display:block;margin-bottom:6px'>¿En qué podemos ayudarte?</label>\n      <textarea name='mensaje' rows='4' required placeholder='Cuéntanos sobre tu vehículo y qué producto buscas...' style='width:100%;padding:11px 14px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:8px;color:#fff;font-family:Barlow,Arial,sans-serif;font-size:15px;resize:vertical'></textarea>\n    </div>\n    <button type='submit' style='padding:13px 28px;background:#ffed00;color:#1a1a1a;border:none;border-radius:8px;font-family:Barlow,Arial,sans-serif;font-weight:700;font-size:15px;cursor:pointer;align-self:flex-start'>Enviar mensaje</button>\n  </form>\n  <p style='font-family:Barlow,Arial,sans-serif;font-size:12px;color:rgba(255,255,255,.5);margin-top:16px'>También puedes usar el plugin Contact Form 7 en WordPress para un formulario con seguimiento completo.</p>\n</div>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "244814d3",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "background_background": "classic",
+        "background_color": "#00205f",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "24",
+          "bottom": "0",
+          "left": "24",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "65c2860d",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "3ab56c2b",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "<footer style='padding:32px 0;border-top:1px solid rgba(255,255,255,.12)'>\n  <div style='display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px'>\n    <div>\n      <div style='font-family:Barlow,Arial,sans-serif;font-size:18px;font-weight:900;font-style:italic;color:#fff;margin-bottom:4px'>venoco<sup style='font-size:10px'>®</sup></div>\n      <div style='font-family:Barlow,Arial,sans-serif;font-size:13px;color:rgba(255,255,255,.5)'>© 2026 Venoco. Todos los derechos reservados.</div>\n    </div>\n    <nav style='display:flex;gap:20px;flex-wrap:wrap'>\n      <a href='#quienes' style='font-family:Barlow,Arial,sans-serif;font-size:14px;color:rgba(255,255,255,.7);text-decoration:none'>Quiénes somos</a>\n      <a href='#productos' style='font-family:Barlow,Arial,sans-serif;font-size:14px;color:rgba(255,255,255,.7);text-decoration:none'>Productos</a>\n      <a href='#faq' style='font-family:Barlow,Arial,sans-serif;font-size:14px;color:rgba(255,255,255,.7);text-decoration:none'>FAQ</a>\n      <a href='#contacto' style='font-family:Barlow,Arial,sans-serif;font-size:14px;color:rgba(255,255,255,.7);text-decoration:none'>Contacto</a>\n      <a href='mailto:ventas@venoco.com' style='font-family:Barlow,Arial,sans-serif;font-size:14px;color:#ffed00;text-decoration:none'>ventas@venoco.com</a>\n    </nav>\n  </div>\n</footer>"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": {
+    "template": "elementor_canvas"
+  }
+}
