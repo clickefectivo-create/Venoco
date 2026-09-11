@@ -27,8 +27,8 @@ const PRODUCTS = [
     src: 'https://venoco.com/wp-content/uploads/2026/09/expert-extra.png',
     bgImage: 'https://venoco.com/wp-content/uploads/2026/09/9-1.png',
     link: '#productos',
-    bg: '#ffed00',
-    panel: '#e6d500',
+    bg: '#0033a0',
+    panel: '#002470',
     small: false,
   },
   {
@@ -79,8 +79,8 @@ const PRODUCTS = [
     src: 'https://venoco.com/wp-content/uploads/2026/09/Transmision.png',
     bgImage: 'https://venoco.com/wp-content/uploads/2026/09/12.png',
     link: '#productos',
-    bg: '#ffed00',
-    panel: '#e6d500',
+    bg: '#0033a0',
+    panel: '#002470',
     small: false,
   },
 ] as const
@@ -244,10 +244,9 @@ export default function ToonhubVenocoHero() {
     style.textContent = `
       #toonhub-venoco-root * {
         color: #ffffff !important;
-        font-family: 'Inter', sans-serif !important;
       }
       #toonhub-venoco-root h1 {
-        font-family: 'Anton', sans-serif !important;
+        font-family: 'Serpentine Bold Oblique', 'Anton', sans-serif !important;
         color: #ffffff !important;
       }
       #toonhub-venoco-root a.toonhub-cta {
