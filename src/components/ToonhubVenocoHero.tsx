@@ -168,8 +168,11 @@ function getCardStyle(
     case 'center':
       return {
         ...base,
-        width: small ? 'clamp(360px, 33vw, 600px)' : 'clamp(480px, 44vw, 800px)',
-        bottom: '6%',
+        width: 'auto',
+        maxWidth: small ? '28vw' : '38vw',
+        maxHeight: '68vh',
+        objectFit: 'contain',
+        bottom: '4%',
         left: '50%',
         transform: 'translateX(-50%) translateZ(0)',
         opacity: 1,
@@ -179,7 +182,10 @@ function getCardStyle(
     case 'left':
       return {
         ...base,
-        width: small ? 'clamp(240px, 21vw, 420px)' : 'clamp(320px, 28vw, 560px)',
+        width: 'auto',
+        maxWidth: small ? '18vw' : '24vw',
+        maxHeight: '48vh',
+        objectFit: 'contain',
         bottom: '4%',
         left: 'clamp(20px, 4vw, 80px)',
         transform: 'rotate(-14deg) translateZ(0)',
@@ -190,7 +196,10 @@ function getCardStyle(
     case 'right':
       return {
         ...base,
-        width: small ? 'clamp(240px, 21vw, 420px)' : 'clamp(320px, 28vw, 560px)',
+        width: 'auto',
+        maxWidth: small ? '18vw' : '24vw',
+        maxHeight: '48vh',
+        objectFit: 'contain',
         bottom: '4%',
         right: 'clamp(20px, 4vw, 80px)',
         transform: 'rotate(14deg) translateZ(0)',
@@ -224,6 +233,34 @@ export default function ToonhubVenocoHero() {
     const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches)
     mq.addEventListener('change', handler)
     return () => mq.removeEventListener('change', handler)
+  }, [])
+
+  // Inyectar CSS con !important para sobrescribir estilos de h1/p del tema de WordPress
+  useEffect(() => {
+    const id = 'toonhub-venoco-overrides'
+    if (document.getElementById(id)) return
+    const style = document.createElement('style')
+    style.id = id
+    style.textContent = `
+      #toonhub-venoco-root * {
+        color: #ffffff !important;
+        font-family: 'Inter', sans-serif !important;
+      }
+      #toonhub-venoco-root h1 {
+        font-family: 'Anton', sans-serif !important;
+        color: #ffffff !important;
+      }
+      #toonhub-venoco-root a.toonhub-cta {
+        color: #ffffff !important;
+        background-color: #ffed00 !important;
+      }
+      #toonhub-venoco-root button svg,
+      #toonhub-venoco-root a svg {
+        stroke: #ffffff !important;
+        color: #ffffff !important;
+      }
+    `
+    document.head.appendChild(style)
   }, [])
 
   useEffect(() => {
@@ -406,19 +443,20 @@ export default function ToonhubVenocoHero() {
             disabled={isAnimating}
             aria-label="Producto anterior"
             style={{
-              width: 44, height: 44,
+              width: 52, height: 52,
               borderRadius: '50%',
-              border: '2px solid rgba(255,255,255,0.9)',
-              background: 'rgba(0,0,0,0.45)',
+              border: '2.5px solid #ffffff',
+              background: 'rgba(0,0,0,0.65)',
               color: '#ffffff',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               cursor: isAnimating ? 'not-allowed' : 'pointer',
-              opacity: isAnimating ? 0.4 : 1,
+              opacity: isAnimating ? 0.35 : 1,
               transition: 'opacity 0.15s ease',
               flexShrink: 0,
+              lineHeight: 0,
             }}
           >
-            <ArrowLeft size={18} strokeWidth={2.5} />
+            <ArrowLeft size={22} strokeWidth={2.5} color="#ffffff" />
           </button>
 
           <button
@@ -426,19 +464,20 @@ export default function ToonhubVenocoHero() {
             disabled={isAnimating}
             aria-label="Producto siguiente"
             style={{
-              width: 44, height: 44,
+              width: 52, height: 52,
               borderRadius: '50%',
-              border: '2px solid rgba(255,255,255,0.9)',
-              background: 'rgba(0,0,0,0.45)',
+              border: '2.5px solid #ffffff',
+              background: 'rgba(0,0,0,0.65)',
               color: '#ffffff',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               cursor: isAnimating ? 'not-allowed' : 'pointer',
-              opacity: isAnimating ? 0.4 : 1,
+              opacity: isAnimating ? 0.35 : 1,
               transition: 'opacity 0.15s ease',
               flexShrink: 0,
+              lineHeight: 0,
             }}
           >
-            <ArrowRight size={18} strokeWidth={2.5} />
+            <ArrowRight size={22} strokeWidth={2.5} color="#ffffff" />
           </button>
         </div>
       </div>
@@ -455,6 +494,7 @@ export default function ToonhubVenocoHero() {
         <a
           href="#productos"
           onClick={handleCtaClick}
+          className="toonhub-cta"
           style={{
             display: 'inline-flex',
             alignItems: 'center',
